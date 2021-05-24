@@ -12,24 +12,24 @@
   </head>
   <body>
     
-   
+    
       <div class="container">
         <!-- Introduction-->
       <h1 class="mt-5 mx-1 display-6"  style="text-align:center">
-        <img src="normal.png" 
-          style="width: 75px">
-        Let's introduce!
+        What (bio) sex are you?
                 </h1>  
         </div>
-        <div class="mt-3 mx-3 col d-flex justify-content-center">
-            <p class="lead" style="text-align:center">
-              This questionaire is about your <b> musculoskeletal symptoms</b> such as aches, pains and/or stiffness <br>
-              <br> Please focus on the particular health problem(s) for which you sought treatment from the service.</p>
-        </div>
-        <div class="mt-5 col d-flex justify-content-center" style="text-align:center">
+        <div class="mt-5 mx-3  col d-flex justify-content-center">
+          <select class="w-75 form-select form-select-lg" aria-label=".form-select-lg example">
+            <option selected>- Biological sex- </option>
+            <option value="1">Female</option>
+            <option value="2">Male</option>
+          </select> </div>
+        <p class="mt-3 text-white"> zimzalabim </p>
+<div class="mt-5 col d-flex justify-content-center" style="text-align:center">
     <!-- Log in button -->
-    <a href= "s1.html" type="submit" role= "button" class="border-0 btn-lg text-decoration-none" style="background-color: #ff7f4f;color: #ffffff;">
-      Continue
+    <a href= "s2.html" type="submit" role= "button" class="border-0 btn-lg text-decoration-none" style="background-color: #ff7f4f;color: #ffffff;">
+      Next
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
       </svg>
@@ -47,8 +47,7 @@
     <!-- Script for username/password validation -->
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
-      /*
-      (function() {
+     /* (function() {
         'use strict';
         window.addEventListener('load', function() {
           // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -68,9 +67,13 @@
             }, false);
           });
         }, false);
-      })();
-      */
+      })();*/
       </script>
+    <script>
+          function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+        }
+    </script>
 
     </body>
 </html>
