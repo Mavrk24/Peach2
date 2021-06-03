@@ -77,13 +77,13 @@
       <p class="text-muted">I got peach for u... </p>
     </div> 
     <div class="col mx-1" style="text-align:right;">
-      <p class="text-muted">5 min</p>
-      <span class="badge bg-danger">1</span>
+      <p class="text-muted">10 min</p>
+      <span class="badge bg-danger">2</span>
     </div>
   </div>
   <!--button -->
   <div class="row mt-3" style="text-align:right;">
-    <div class="col mx-3">
+    <div class="col" id="fixed">
     <button type="button" class="btn btn-secondary btn-circle btn-xl" >
       <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#ffffff" class="bi bi-plus" viewBox="0 0 16 16">
         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
@@ -116,6 +116,11 @@
   font-size: 24px;
   line-height: 1.33;
   border-radius: 35px;
+}
+#fixed{
+  position: absolute;
+  bottom: 50px;
+  right:50px;
 }
 
   </style>
