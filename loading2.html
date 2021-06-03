@@ -41,11 +41,9 @@
   
     <button type="submit" class="border-0 btn-lg text-decoration-none" style="background-color: #ff7f4f;color: #ffffff;">
       <a id="gone">Get Started</a>
-      <svg id="gone" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
       </svg>
-      <span id="load" class="d-none spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-  <span  id="load" class="d-none sr-only">Loading...</span>
     </button>
   </div>
 </form>
@@ -72,16 +70,14 @@
               if (form.checkValidity() === false) {
                 event.preventDefault();
                 event.stopPropagation();
-                load.removeClass("d-none").show();
-                load.classList.add('d-block');
-               gone.d-none;
+                var element = document.getElementById("gone");
+                element.classList.add('d-block');
               }
-              
               else if (form.checkValidity() === true) {
-               load.d-block;
-               gone.d-none;}
-            
+                //window.open("loading.html");
+              }
               form.classList.add('was-validated');
+              
             }, false);
           });
         }, false);
